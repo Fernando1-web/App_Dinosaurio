@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_Dinosaurio.MainPage">
+
+    <ScrollView>
+        <StackLayout Margin="20,20,20,20" Spacing="10">
+            <Image Source="dinosaurios.jpg" HeightRequest="400" WidthRequest="600"/>
+            <Label Text="App Dinosaurios" TextColor="GhostWhite" FontSize="22"/>
+            <Entry x:Name="Dino" Placeholder="Ingrese el nombre del dinosaurio"/>
+            <Entry x:Name="Peso" Placeholder="Ingrese el peso del dinosaurio (en Kg)"/>
+            <Entry x:Name="Altura" Placeholder="Ingrese la altura del dinosaurio (en mts)"/>
+            <Button x:Name="BtnDatos" Text="Obtener datos" Clicked="BtnDatos_Clicked" HorizontalOptions="End"/>
+            <Label x:Name="LblDatos" Text="Datos"/>
+            <Label x:Name="LblPeso" Text="Peso(en Lbs)"/>
+            <Label x:Name="LblAltura" Text="Altura(en Cms)"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
